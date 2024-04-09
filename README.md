@@ -38,12 +38,12 @@ Vous pouvez recuperer le projet en telechargeant le git
 Ou alors directement depuis l'invite de commande git avec : `git clone https://github.com/MathieuAudibert/Hackaton-2024`
 
 # Contacts 
-`ismael.genet@efrei.net`
+<u>ismael.genet@efrei.net
 
-`andrija.tomic@efrei.net`
+andrija.tomic@efrei.net
 
-`romeo.agostino@efrei.net`
+romeo.agostino@efrei.net
 
-`lucien.jeammet@efrei.net`
+lucien.jeammet@efrei.net
 
-`mathieu.audibert@efrei.net`
+mathieu.audibert@efrei.net </u>
