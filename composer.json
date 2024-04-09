@@ -1,0 +1,15 @@
+{
+    "name": "mathi/hackaton-2024",
+    "autoload": {
+        "psr-4": {
+            "Mathi\\Hackaton2024\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mathieu Audibert",
+            "email": "mathieu.audibert27@gmail.com"
+        }
+    ],
+    "require": {}
+}
