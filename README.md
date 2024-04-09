@@ -36,8 +36,4 @@ Ou alors directement depuis l'invite de commande git avec : `git clone https://g
 
 `lucien.jeammet@efrei.net`
 
-<<<<<<< HEAD
 `mathieu.audibert@efrei.net`
-=======
-`mathieu.audibert@efrei.net`
->>>>>>> 713c48a4c0cd60c79b53b8e0cbb6cb17606cf475
