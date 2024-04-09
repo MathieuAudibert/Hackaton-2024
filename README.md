@@ -32,6 +32,7 @@ Les utilisateurs connectés ont accès a leurs annonces et peuvent les modifier/
 ![Criteres eval](/img_readme/image1.png)
 # Installation
 Vous pouvez recuperer le projet en telechargeant le git 
+![Screen telecharger git](/img_readme/3.png)
 
 Ou alors directement depuis l'invite de commande git avec : `git clone https://github.com/MathieuAudibert/Hackaton-2024`
 
