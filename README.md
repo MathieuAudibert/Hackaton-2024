@@ -17,11 +17,17 @@ Nous devions réaliser un site web en 4 jours et voici les contraintes principal
 - Interdiction d'utiliser des CMS no-code/low-code
 
 # Introduction au projet
-Notre site est ... 
+Notre site est un site d'annonce de ventes de jeux vidéos. 
+
+Le principe est simple, les utilisateurs *connectés* peuvent poster leurs annonces avec une image du jeu, un descriptif et un prix. Les clients eux, *n'ont pas besoin de se connecter* pour voir les annonces et contacter les vendeurs. 
+
+Les utilisateurs connectés ont accès a leurs annonces et peuvent les modifier/supprimer.
 
 # Fonctionnalités
-- Inscription, Connexion
-- ...
+- Inscription, Connexion et modification du profil vendeur
+- Création, modifications et suppressions d'annonces
+- Description des annonces
+- Recherche d'annonces
 
 ![Criteres eval](/img_readme/image1.png)
 # Installation
