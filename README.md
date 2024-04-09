@@ -9,6 +9,7 @@ Nous devions réaliser un site web en 4 jours et voici les contraintes principal
 - Inscription, connexion
 - Sécurisé
 
+![Planning](/img_readme/image.png)
 # Outils
 - HTML CSS
 - Javascript
@@ -22,6 +23,7 @@ Notre site est ...
 - Inscription, Connexion
 - ...
 
+![Criteres eval](/img_readme/image1.png)
 # Installation
 Vous pouvez recuperer le projet en telechargeant le git 
 
