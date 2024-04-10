@@ -21,7 +21,7 @@ function header_view(){
         <section class='header_center'>
             <ul>
                 <li>Produits</li>
-                <li>Creer une annonce</li>
+                <li> <a href='/Annonces'> Creer une annonce </a></li>
                 <li>A propos</li>
             </ul>
         </section>

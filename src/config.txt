@@ -1,0 +1,14 @@
+// {
+//     "type": "service_account",
+//     "project_id": "tradezusichen",
+//     "private_key_id": "83766f187163bfa3e0bb6dc2c3b9cb96cdfde9fd",
+//     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDQeOGNvLpJyKiA\nHxRUkZsuPauYYInoGgmYc50DFf+nRFsDVdRoD4cmWzopoTgoOrF4wDl73ckfn29X\n28jhbzxNnd+ZNHblpj7Uv12s5UBwNA0UuXZUTVgpsWxCA6kpdK18yCQmcW5LOo7N\nYwSDy96DwBH3IqEDMqQBOV4N3LwoFaZ0JTgOU9qTOcGvet2uaQrC+mLK984c2RQ2\n7Sq32vsPe4NBHYPvnGRyBucYzGg0pwRt/wvcCdK7DVF7ZX7utrW1tJUBOF2a2hyY\nfkSlfG/7tWEuls39+p1Vi6/LLc9ciiCKNBI5/DaDGWMTY4nKSFVNbvTcY59y2poT\nHOIQH6dpAgMBAAECggEAAjr7hXXanmB4YQqJaqWLffv97SmXQCBLMFIzAK3zEsSP\nSWKuh5XRnIOcWdwA4E6kcxtyDKpg9Pwn3PjxK2xHvmLX2hPuyQ01czbq7Hx1azM7\nXUM7X10xJMe3q0sju676Y4aL+yH6i/EqnEruE5o88rboL6HeDCKLZlHz+NJUQa+D\nVJR2+yzNbQzg3+cmQy/YolCtZWOH6T8/I12PumF0Vyjpm3lhwQLD2JXv4I2cUk+H\naULxboSUrwNV/YP4sfSC+4ZQKgsX4IyR0Us5Qogas8JxdR6uXgVUnJ5x3KBbnRP+\nfcY0inyE1sef30rlnL8p0RQDR4wUP+/4WBC9f8+rQQKBgQDyicNYtEavDA14uk0w\nSL9EgcBund3R0C7wB7ujpVqmj5LXINYAIWhuJJ/+NdTnpu1LCr/rEx0aH3jBM1D6\nViWeEyZ5iYO1/LF6YmQiiCOZb70kQLcsoN9v8kFtE3CbjUkGPVUXYM4AzxHgVS/g\nRi6uyY/ov5ePA0beyB4cQzcccQKBgQDcCxK+cPMWxU/4l7Paq0xAQ02nPIYCGbxR\nHL5dC56NmNOFOQy13Tnqu/yOSHh9uOxkk7y2+rI7CbajkJFOpeDkBSW9YjEvUwb4\njECCtq4gaJ9/uHTnBnFqYQSX4hJthQmkZRQrlLOJgfZbKMZ4LJ4ZjpUawXNbVl2I\nSXFz/3mWeQKBgQDGy35Pdaw+DD36h5F/ExGbAFMPF9xZ/i6K1XvKPV1ZCnNMW4Cs\nqLVlGiX9gngYy+zRxmTaNFd1MviSOxKTrgq1T3MIyVsozo9WBdGXsEilmj3Iujap\noM6jfkh8NCPni92f/KODPvh7Fz7KxmgwhrX61AFdv7RlJ0Vuk06C0eEZMQKBgFdG\npRaYIjLj7AZD1Xhj/Qh4KXKtlNF8d68MYYzyMN8kwLDUoe/4YSJzkYa1w+TJ1ilG\nV9GTueGkxqY1jwzMylhmmkN1kOCeY+NtbaDq6EG+fZThCq0fZxi0hmffqUN7QwnL\ndaabgmKGA7rAf4fm2oZ0gTttg1208cA+sRs7N3SxAoGBAINU2xRdfpVaLSNiooSi\nWQCumyLIvckB05S6Ju07FyCv0iuZHj+oZrF8nCBspyisFur4/gojTPW2gu9lv/8o\nzqT9txsFRh5WeGyeqDNCuZAH409Lie1I+vLsQhNtm+iT06V++ALg/MjNLpZVInnK\nb5utOkuGSNLHd52g5lbBUo94\n-----END PRIVATE KEY-----\n",
+//     "client_email": "firebase-adminsdk-vyapf@tradezusichen.iam.gserviceaccount.com",
+//     "client_id": "112762125333674422788",
+//     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+//     "token_uri": "https://oauth2.googleapis.com/token",
+//     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+//     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-vyapf%40tradezusichen.iam.gserviceaccount.com",
+//     "universe_domain": "googleapis.com"
+//   }
+  
