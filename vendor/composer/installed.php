@@ -3,7 +3,7 @@
         'name' => 'mathieu/hackaton-2024',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'da801090bb747526b8a237f696a5c2cb69527197',
+        'reference' => 'dbd50886adcd157ccde79cde0ea63110893132d5',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -172,15 +172,6 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'ktamas77/firebase-php' => array(
-            'pretty_version' => '3.0.0',
-            'version' => '3.0.0.0',
-            'reference' => '80ccc4dc2996d6ebfbb2ace74569293bb94062ac',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../ktamas77/firebase-php',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
         'lcobucci/clock' => array(
             'pretty_version' => '2.3.0',
             'version' => '2.3.0.0',
@@ -202,7 +193,7 @@
         'mathieu/hackaton-2024' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'da801090bb747526b8a237f696a5c2cb69527197',
+            'reference' => 'dbd50886adcd157ccde79cde0ea63110893132d5',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
