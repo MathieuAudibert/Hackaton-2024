@@ -6,7 +6,7 @@ require_once('src\Register\Handler.php');
 require_once('src\Annonce\Handler.php');
 require_once('src\Profile\Handler.php');
 require_once('src\Produit\Handler.php');
-
+require_once('bdd.php');
 function route_request(){
     $uri = $_SERVER['REQUEST_URI'];
 
@@ -22,8 +22,8 @@ function route_request(){
         case '/Register':
             register_handler();
             break;
-        case '/Create':
-            annonces_handler();
+        case '/Annonces':
+            annonces_handler($_POST);
             break;
         case '/Logout':
             require('src\Login\Logout.php');
@@ -34,6 +34,8 @@ function route_request(){
         case '/Products':
             product_handler();
             break;
+
+        
     }
 }
 
