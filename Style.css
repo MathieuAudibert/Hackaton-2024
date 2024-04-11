@@ -63,10 +63,12 @@ ul{
 
   .header_right ul {
     display: flex;
-    width: 16%;
+    width: 100%;
+    justify-content: end;
   }
   .header_right li {
     margin-right: 30px;
+    width: 6%;
   }
 
   .header_right .loginIcon:hover {
@@ -75,7 +77,7 @@ ul{
   }
   
   .header_right li img {
-    width: 100%;
+    width: 70%;
   }
 
   /* END HEADER */
@@ -166,10 +168,13 @@ ul{
 .register-container input[type="text"],
 .register-container input[type="email"],
 .register-container input[type="tel"],
+.register-container input[type="nom"],
+.register-container input[type="prenom"],
+.register-container input[type="adresse"],
 .register-container input[type="password"] {
   width: 75%;
   padding: 10px;
-  margin: 20px 0 20px 0;
+  margin: 9px 0 20px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
@@ -199,3 +204,54 @@ ul{
 }
 
 /*END REGISTER*/
+
+
+
+/*Annonces*/
+
+.annonces-container {
+  width: 25%;
+  margin: 100px auto;
+  padding: 20px;
+  color: white;
+  background-color: #71AFDC;
+  border-radius: 10px;
+  text-align: center;
+  height: 65vh;
+}
+
+
+.annonces-container h2 {
+  font-size: 30px;
+}
+
+
+.annonces-container input[type="text"],
+.annonces-container input[type="email"],
+.annonces-container input[type="tel"],
+.annonces-container input[type="number"],
+.annonces-container input[type="password"] {
+  width: 75%;
+  padding: 10px;
+  margin: 20px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #6490b8;
+  color: white;
+  height: 4vh;
+}
+
+.annonces-container button {
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px;
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+}
+
+/*End Annonces*/
