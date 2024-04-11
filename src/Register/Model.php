@@ -7,7 +7,7 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase
 import { getAuth, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyA4PmTzEru7hUfMOW5TnQ5jDl0FfaT-_DE",.$_ENV["TOKEN.apiKey"]
+    apiKey: "AIzaSyA4PmTzEru7hUfMOW5TnQ5jDl0FfaT-_DE",
     authDomain: "tradezusichen.firebaseapp.com",
     projectId: "tradezusichen",
     storageBucket: "tradezusichen.appspot.com",
