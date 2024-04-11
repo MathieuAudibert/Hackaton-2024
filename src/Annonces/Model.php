@@ -1,5 +1,8 @@
 <?php
 
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+
 function createAnnonce($jeu, $prix, $description, $adresse, $image) {
     $dsn = "pgsql:host=dpg-coagp3779t8c73ehtqjg-a.frankfurt-postgres.render.com;dbname=tradezusichen;port=5432;";
     $username = "tradezusichen_user";
@@ -7,11 +10,16 @@ function createAnnonce($jeu, $prix, $description, $adresse, $image) {
 
     try {
         $pdo = new PDO($dsn, $username, $password);
-        $requete = "INSERT INTO annonces(nom_jeu, prix, image, description, adresse, vendeur) VALUES (?, ?, ?, ?, ?, 1)";
-        $req = $pdo->prepare($requete);
-        $resultat = $req->execute([$jeu, $prix, $description, $adresse, $image]);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        return $resultat;
+        $requete = "INSERT INTO annonces(nom_jeu, prix, description, adresse, image) VALUES (?, ?, ?, ?, ?)";
+        $req = $pdo->prepare($requete);
+
+        $req->execute([$jeu, $prix, $description, $adresse, $image]);
+        header('Location: http://localhost:7777/');
+        return true;
+       
+        exit();
 
     } catch (PDOException $e) {
         echo "Erreur de la base de données : " . $e->getMessage();

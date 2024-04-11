@@ -4,6 +4,7 @@ require_once('src\Homepage\Handler.php');
 require_once('src\Login\Handler.php');
 require_once('src\Register\Handler.php');
 require_once('src\Annonces\Handler.php');
+require_once('bdd.php');
 require 'vendor/autoload.php'; // Inclure l'autoloader Composer
 
 // use Kreait\Firebase\Factory;
@@ -13,6 +14,7 @@ require 'vendor/autoload.php'; // Inclure l'autoloader Composer
 //     ->create();
 
 // $auth = $firebase->getAuth(); // Obtenez une instance de l'authentification Firebase
+
 
 function route_request(){
     $uri = $_SERVER['REQUEST_URI'];
@@ -31,8 +33,9 @@ function route_request(){
             break;
         
         case '/Annonces':
-            annonces_handler();
+            annonces_handler($_POST);
             break;
+
     }
 }
 
