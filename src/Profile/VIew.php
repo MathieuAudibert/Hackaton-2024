@@ -1,20 +1,22 @@
 <?php
-    function Login_View(){
-        include('header.php');
+
+
+function profile_view(){
+    include('header.php');
 ?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tradezusichen</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>Profile - Tradezusichen</title>
 </head>
 <body>
-    <?php 
+<?php 
         header_view();
     ?>
-    <main>
+<main>
     <div class="login-container">
         <h2>Connexion</h2>
         <form action="#" method="post" id='login-form'>
@@ -26,11 +28,10 @@
         <a href="/Register" class="no-account">Vous n'avez pas encore de Compte ? Créez-en un.</a>
     </div>
     </main>
-
+    
 </body>
-
 </html>
 
-<?php 
+<?php
 }
 ?>

@@ -1,8 +1,8 @@
 <?php
 function register_view(){
     include('header.php');
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,25 +11,25 @@ function register_view(){
     <title>Inscription - Tradezusichen</title>
 </head>
 <body>
-<?php 
-        header_view();
-    ?>
-
-    <div class="register-container">
+<?php header_view(); ?>
+    
+    <div class="register-container" id='register-container'>
         <h2>Inscription</h2>
-        <form action="#" method="post">
-        <input type="email" name="email" placeholder="Adresse email" required><br>
-            <input type="text" name="nom" placeholder="Nom" required><br>
-            <input type="text" name="prenom" placeholder="Prénom" required><br>
-            <input type="tel" name="tel" placeholder="Numéro de téléphone" required><br>
-            <input type="password" name="password" placeholder="Mot de passe" required><br>
+        <form id="register-form">
+            <input type="email" id='register-email' placeholder="Adresse email" required><br>
+            <input type="password" id='register-password' placeholder="Mot de passe" required><br>
+            <input type="nom" id='register-nom' placeholder="nom" required><br>
+            <input type="prenom" id='register-prenom' placeholder="prenom" required><br>
+            <input type="adresse" id='register-adresse' placeholder="Adresse" required><br>
+            <input type="Tel" id='register-tel' placeholder="tel" required><br>
             <button type="submit">S'inscrire</button>
         </form>
+
         <a href="/Login" class="login-link">Déjà membre ? Connectez-vous ici</a>
     </div>
+
 </body>
 </html>
-
 
 <?php 
 }
