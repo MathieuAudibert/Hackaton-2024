@@ -1,6 +1,6 @@
 <?php
-
 session_start();
+
 function header_view() {
     $userIsLoggedIn = isset($_SESSION['user_logged_in']) && $_SESSION['user_logged_in'];
 ?>
@@ -22,7 +22,7 @@ function header_view() {
         </section>
         <section class='header_center'>
             <ul>
-                <li>Produits</li>
+                <li> <a href='/Products'>Produits</a></li>
                 <li> <a href='/Create'>Creer une annonce </a></li>
                 <li>A propos</li>
             </ul>

@@ -22,7 +22,7 @@
             <input class="password-form" id='password-form'type="password" name="password" placeholder="Mot de passe" required><br>
             <button class="button-submit" type="submit" class="login-button">Connexion</button>
         </form>
-        <a href="#" class="forgot-password">Mot de passe oublié ?</a><br>
+        <a href="#" class="forgot-password" id='forgotpasslabel'>Mot de passe oublié ?</a><br>
         <a href="/Register" class="no-account">Vous n'avez pas encore de Compte ? Créez-en un.</a>
     </div>
     </main>

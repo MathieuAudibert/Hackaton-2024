@@ -5,6 +5,7 @@ require_once('src\Login\Handler.php');
 require_once('src\Register\Handler.php');
 require_once('src\Annonce\Handler.php');
 require_once('src\Profile\Handler.php');
+require_once('src\Produit\Handler.php');
 
 function route_request(){
     $uri = $_SERVER['REQUEST_URI'];
@@ -29,6 +30,9 @@ function route_request(){
             break;
         case '/Profile':
             profile_handler();
+            break;
+        case '/Products':
+            product_handler();
             break;
     }
 }
