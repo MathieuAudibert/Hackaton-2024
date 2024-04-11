@@ -72,51 +72,40 @@ function Home_View()
 
     </body>
     <script>
-        // Définir l'index de la diapositive actuelle
         var slideIndex = 1;
 
-        // Afficher la première diapositive au chargement de la page
         showSlides(slideIndex);
 
-        // Fonction pour passer à la diapositive suivante ou précédente
         function plusSlides(n) {
             showSlides((slideIndex += n));
         }
 
-        // Fonction pour passer à une diapositive spécifique
         function currentSlide(n) {
             showSlides((slideIndex = n));
         }
 
-        // Fonction principale pour afficher les diapositives
         function showSlides(n) {
             var i;
 
-            // Récupérer toutes les diapositives et les points (dots) dans le document
             var slides = document.getElementsByClassName("custom-slider");
             var dots = document.getElementsByClassName("dot");
 
-            // Si l'index de la diapositive dépasse le nombre total de diapositives, revenir à la première
             if (n > slides.length) {
                 slideIndex = 1;
             }
 
-            // Si l'index de la diapositive est inférieur à 1, passer à la dernière diapositive
             if (n < 1) {
                 slideIndex = slides.length;
             }
 
-            // Masquer toutes les diapositives
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
 
-            // Retirer la classe "active" de tous les points
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
 
-            // Afficher la diapositive actuelle et marquer le point comme "actif"
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
         }
