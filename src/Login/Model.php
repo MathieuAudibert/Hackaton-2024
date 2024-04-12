@@ -43,25 +43,24 @@ import { getAuth, signInWithEmailAndPassword , sendPasswordResetEmail } from 'ht
 
         ForgotPassLabel.addEventListener('click', ForgotPassword);
 
-    document.getElementById('login-form').addEventListener('submit', function(e) {
-    e.preventDefault();
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
 
-    const email = document.getElementById('email-form').value;
-    const password = document.getElementById('password-form').value;
+            const email = document.getElementById('email-form').value;
+            const password = document.getElementById('password-form').value;
 
-    signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-        console.log("Connexion réussie");
-        <?php 
-    $_SESSION['user_logged_in'] = true;
-    ?>
-        window.location.href = '/'; 
-    })
-    .catch((error) => {
-        console.error("Erreur de connexion: ", error);
-    });
-});
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    console.log("Connexion réussie");
+                    window.location.href = '/update_session.php';
+                })
+                .catch((error) => {
+                    console.error("Erreur de connexion: ", error);
+                });
+        });
+
+        
     </script>
-    <?php
+<?php
 }
 ?>
