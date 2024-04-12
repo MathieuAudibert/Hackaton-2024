@@ -15,6 +15,25 @@ function product_view(){
 <?php 
         header_view();
     ?>
+    <main>
+    <div class='card-container'>
+        <?php
+        if (!empty($annonces)) {
+            foreach ($annonces as $annonce) {
+                echo "<div class='annonce'>";
+                echo "<h2>Nom du Jeu: " . htmlspecialchars($annonce['nom_jeu']) . "</h2>";
+                echo "<p>Descriptions: " . htmlspecialchars($annonce['descriptions']) . "</p>";
+                echo "<p>Adresse: " . htmlspecialchars($annonce['adresse']) . "</p>";
+                echo "<img src='" . htmlspecialchars($annonce['images']) . "' alt='" . htmlspecialchars($annonce['nom_jeu']) . "'>";
+                echo "<p>Prix: " . htmlspecialchars($annonce['prix']) . "€</p>";
+                echo "</div>";
+            }
+        } else {
+            echo "<p>No games found.</p>";
+        }
+        ?>
+        </div>
+    </main>
 </body>
 </html>
 

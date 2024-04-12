@@ -1,7 +1,7 @@
 <?php
-function product_model(){
 
-    
+function getAnnoncesFromDatabase()
+{
     $dsn = "pgsql:host=dpg-coagp3779t8c73ehtqjg-a.frankfurt-postgres.render.com;dbname=tradezusichen;port=5432;";
     $username = "tradezusichen_user";
     $password = "TfrKbwVdysyKri88siTQi7bgJN3Nud1j";
@@ -16,11 +16,6 @@ function product_model(){
         return $annonces;
     } catch (PDOException $e) {
         echo "Erreur de connexion : " . $e->getMessage();
-        return array(); // Retourne un tableau vide en cas d'erreur
+        return array();
     }
-
 }
-?>
-
-
-<?php

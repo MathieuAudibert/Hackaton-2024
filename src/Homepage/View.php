@@ -1,9 +1,17 @@
 <?php
-function Home_View()
-{
+function Home_View() {
     include('header.php');
-?>
+    require_once('Getannonces.php');
 
+
+    $annonces = [];
+    if (isset($_POST['search']) && !empty($_POST['nom_jeu'])) {
+        $nom_jeu = '%' . $_POST['nom_jeu'] . '%';
+        $annonces = searchGamesByName($nom_jeu);
+    } else {
+        $annonces = getAnnoncesFromDatabase();
+    }
+?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -68,24 +76,29 @@ function Home_View()
             <div class="top-games">
                 <h1>Jeux du moment</h1>
             </div>
-            <div class='card-container'>
-                <?php
-                // Appel à la fonction pour récupérer les annonces depuis la base de données
-                $annonces = getAnnoncesFromDatabase();
+            
+            <form method="post">
+            <input type="text" name="nom_jeu" placeholder="Rechercher un jeu" required>
+            <button type="submit" name="search">Recherche</button>
+        </form>
 
-                foreach ($annonces as $annonce) {
-                ?>
-                    <div class="annonce">
-                        <h2><?php echo $annonce['nom_jeux']; ?></h2>
-                        <p><?php echo $annonce['description']; ?></p>
-                        <img src="<?php echo $annonce['image']; ?>" alt="<?php echo $annonce['nom_jeux']; ?>">
-                        <p>Prix : <?php echo $annonce['prix']; ?></p>
-                    </div>
-                <?php
-                }
-                ?>
-
-            </div>
+        <div class='card-container'>
+        <?php
+        if (!empty($annonces)) {
+            foreach ($annonces as $annonce) {
+                echo "<div class='annonce'>";
+                echo "<h2>Nom du Jeu: " . htmlspecialchars($annonce['nom_jeu']) . "</h2>";
+                echo "<p>Descriptions: " . htmlspecialchars($annonce['descriptions']) . "</p>";
+                echo "<p>Adresse: " . htmlspecialchars($annonce['adresse']) . "</p>";
+                echo "<img src='" . htmlspecialchars($annonce['images']) . "' alt='" . htmlspecialchars($annonce['nom_jeu']) . "'>";
+                echo "<p>Prix: " . htmlspecialchars($annonce['prix']) . "€</p>";
+                echo "</div>";
+            }
+        } else {
+            echo "<p>No games found.</p>";
+        }
+        ?>
+        </div>
         </main>
 
     </body>
@@ -94,27 +107,5 @@ function Home_View()
 
 <?php
 }
-function getAnnoncesFromDatabase()
-{
-    // Connexion à la base de données
-    $dsn = "pgsql:host=dpg-coagp3779t8c73ehtqjg-a.frankfurt-postgres.render.com;dbname=tradezusichen;port=5432;";
-    $username = "tradezusichen_user";
-    $password = "TfrKbwVdysyKri88siTQi7bgJN3Nud1j";
 
-    try {
-        $pdo = new PDO($dsn, $username, $password);
-
-        // Exécution de la requête SQL pour récupérer les annonces
-        $query = "SELECT * FROM annonces";
-        $stmt = $pdo->query($query);
-
-        // Récupération des résultats
-        $annonces = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-        return $annonces;
-    } catch (PDOException $e) {
-        echo "Erreur de connexion : " . $e->getMessage();
-        return array(); // Retourne un tableau vide en cas d'erreur
-    }
-}
 ?>

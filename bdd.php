@@ -1,4 +1,5 @@
 <?php
+
 function connectionBDD()
 {
     $dsn = "pgsql:host=dpg-coagp3779t8c73ehtqjg-a.frankfurt-postgres.render.com;dbname=tradezusichen;port=5432;";
@@ -10,32 +11,22 @@ function connectionBDD()
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;
     } catch (PDOException $e) {
-        echo "Erreur de connexion : " . $e->getMessage();
-        return null;
+        die("Connection error: " . $e->getMessage());
     }
 }
 
-function createUserInDatabase($email, $nom, $prenom, $tel)
+function searchGamesByName($gameName)
 {
     $pdo = connectionBDD();
 
-    if ($pdo) {
-        try {
-            $query = "INSERT INTO users (email, nom, prenom, tel) VALUES (?, ?, ?, ?)";
-            $stmt = $pdo->prepare($query);
-            if ($stmt->execute([$email, $nom, $prenom, $tel])) {
-                echo "Utilisateur enregistré dans la base de données avec succès!";
-                return true;
-            } else {
-                echo "Erreur lors de l'insertion dans la base de données.";
-                return false;
-            }
-        } catch (PDOException $e) {
-            echo "Erreur PDO : " . $e->getMessage();
-            return false;
-        }
-    } else {
-        echo "Problème de connexion à la base de données.";
-        return false;
+    try {
+        $stmt = $pdo->prepare("SELECT * FROM annonces WHERE nom_jeu ILIKE :nom_jeu");
+        $gameName = '%' . $gameName . '%';
+        $stmt->bindParam(':nom_jeu', $gameName);
+        $stmt->execute();
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $results;
+    } catch (PDOException $e) {
+        die("Database error: " . $e->getMessage());
     }
 }
