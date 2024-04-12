@@ -243,6 +243,20 @@ ul {
   display: none;
 }
 
+.card-container {
+  display: flex;
+}
+.annonce {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid;
+  border-radius: 25px;
+  margin-left: 15px;
+}
+
 .slide-container {
   width: 100%;
   height: 100%;
@@ -378,6 +392,60 @@ h1 {
   font-size: 20px;
 }
 
+/* DEBUT PROFIL */
+
+.profile-container {
+  background-color: #ffffff; /* Fond blanc pour le conteneur */
+  width: 80%;
+  max-width: 400px; /* Largeur maximale du conteneur */
+  margin: 50px auto; /* Centrage du conteneur */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet en relief */
+  border-radius: 8px; /* Bords arrondis */
+}
+
+/* Titre de la section Profil */
+.profile-container h2 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Détails du profil, nom d'utilisateur et email */
+.profile-details p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.edit-profile-link,
+.logout-link {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#forgotpasslabel2 {
+  display: block;
+  background-color: #ffa500;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#forgotpasslabel2:hover {
+  background-color: #cc8400; /* Assombrissement du bouton lors du survol */
+}
+
 /* START A PROPOS */
 
 .apropos_p {
@@ -392,6 +460,28 @@ h1 {
 .apropos_mail p {
   text-align: center;
   font-size: 19px;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar {
+  border-radius: 50px;
+}
+
+.searchbar input {
+  font-size: 20px;
+  text-align: center;
+}
+
+.searchbar button {
+  font-size: 20px;
+}
+
+.card-container {
+  margin-top: 50px;
 }
 
 /* END A PROPOS */

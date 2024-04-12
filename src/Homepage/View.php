@@ -1,5 +1,6 @@
 <?php
-function Home_View() {
+function Home_View()
+{
     include('header.php');
     require_once('Getannonces.php');
 
@@ -76,29 +77,31 @@ function Home_View() {
             <div class="top-games">
                 <h1>Jeux du moment</h1>
             </div>
-            
-            <form method="post">
-            <input type="text" name="nom_jeu" placeholder="Rechercher un jeu" required>
-            <button type="submit" name="search">Recherche</button>
-        </form>
 
-        <div class='card-container'>
-        <?php
-        if (!empty($annonces)) {
-            foreach ($annonces as $annonce) {
-                echo "<div class='annonce'>";
-                echo "<h2>Nom du Jeu: " . htmlspecialchars($annonce['nom_jeu']) . "</h2>";
-                echo "<p>Descriptions: " . htmlspecialchars($annonce['descriptions']) . "</p>";
-                echo "<p>Adresse: " . htmlspecialchars($annonce['adresse']) . "</p>";
-                echo "<img src='" . htmlspecialchars($annonce['images']) . "' alt='" . htmlspecialchars($annonce['nom_jeu']) . "'>";
-                echo "<p>Prix: " . htmlspecialchars($annonce['prix']) . "€</p>";
-                echo "</div>";
-            }
-        } else {
-            echo "<p>No games found.</p>";
-        }
-        ?>
-        </div>
+            <div class="searchbar">
+                <form method="post">
+                    <input type="text" name="nom_jeu" placeholder="Rechercher un jeu" required>
+                    <button type="submit" name="search">Recherche</button>
+                </form>
+            </div>
+
+            <div class='card-container'>
+                <?php
+                if (!empty($annonces)) {
+                    foreach ($annonces as $annonce) {
+                        echo "<div class='annonce'>";
+                        echo "<h2>Nom du Jeu: " . htmlspecialchars($annonce['nom_jeu']) . "</h2>";
+                        echo "<p>Descriptions: " . htmlspecialchars($annonce['descriptions']) . "</p>";
+                        echo "<p>Adresse: " . htmlspecialchars($annonce['adresse']) . "</p>";
+                        echo "<img src='" . htmlspecialchars($annonce['images']) . "' alt='" . htmlspecialchars($annonce['nom_jeu']) . "'>";
+                        echo "<p>Prix: " . htmlspecialchars($annonce['prix']) . "€</p>";
+                        echo "</div>";
+                    }
+                } else {
+                    echo "<p>No games found.</p>";
+                }
+                ?>
+            </div>
         </main>
 
     </body>
