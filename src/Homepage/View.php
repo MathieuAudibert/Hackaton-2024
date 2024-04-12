@@ -52,7 +52,7 @@ function Home_View()
                 </div>
                 <div class="custom-slider fade">
                     <a href="https://www.instant-gaming.com/fr/" target="_blank">
-                        <img class="slide-img" src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/682990/795736da70d07171558b191837d649ce78f85a2a.jpg" alt="GTA">
+                        <img class="slide-img" src="https://wallpapers.com/images/hd/fortnite-save-the-world-mode-apocalypse-hd-2q39ddatw7avor08.jpg" alt="GTA">
                     </a>
                 </div>
 
