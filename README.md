@@ -9,7 +9,7 @@ Nous devions réaliser un site web en 4 jours et voici les contraintes principal
 - Inscription, connexion
 - Sécurisé
 
-![Planning](/img_readme/image.png)
+![Planning](/img/image.png)
 # Outils
 - HTML CSS
 - Javascript
@@ -29,11 +29,11 @@ Les utilisateurs connectés ont accès a leurs annonces et peuvent les modifier/
 - Description des annonces
 - Recherche d'annonces
 
-![Criteres eval](/img_readme/image1.png)
+![Criteres eval](/img/image1.png)
 # Installation
 Vous pouvez recuperer le projet en telechargeant le git 
 
-![Screen telecharger](/img_readme/3.png)
+![Screen telecharger](/img/3.png)
 
 Ou alors directement depuis l'invite de commande git avec : `git clone https://github.com/MathieuAudibert/Hackaton-2024`
 
